@@ -1,0 +1,377 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ajustes generales del body */
+  body {
+    font-family: Pigiarniq;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* HEADER (fondo “teal”) */
+  header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3B3B3B; /* Ajusta el color que desees */
+    text-align: center;
+  }
+  header .icon img{
+    width: 40px;
+  }
+
+  
+  header .t1{
+    letter-spacing: 25px;
+    color: #000; /* Texto en negro para contrastar */
+  }
+  
+  /* CONTENEDOR 1 (fondo oscuro) */
+  .contenedor1 {
+    background-color: #111; /* Ajusta a tu preferencia */
+    color: #fff;
+    padding: 90px 20px;
+    text-align: center;
+  }
+  
+  .contenedor1 h2 {
+    letter-spacing: 15px;
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  
+  .contenedor1 p {
+    max-width: 700px;
+    margin: 0 auto; /* Centra el texto */
+    line-height: 2.0;
+    font-size: 11px;
+  }
+  
+  /* CONTENEDOR 2 (fondo gris) */
+  .contenedor2 {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contenedor2 h3 {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  
+  .contenedor2 p {
+    max-width: 700px;
+    margin: 0 auto; /* Centra el texto */
+    line-height: 2.0;
+    font-size: 12px;
+  }
+  
+  .contenedor3{
+    background-color: #1E201E;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .contenedor3 h1{
+    font-size: 35px;
+    letter-spacing: 15px;
+    color: #ffffff; /* Texto en negro para contrastar */
+  }
+
+
+  /* Imágenes inferiores en fila */
+  .imagenes-esp {
+
+    display: flex;
+    flex-wrap: wrap;       /* Permite que se ajusten en pantallas pequeñas */
+    gap: 5px;             /* Espacio entre imágenes */
+    justify-content: center; /* Centra el conjunto */
+  }
+
+  
+  .imagenes-esp img {
+    padding: 50px 0px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    flex: 1 1 auto;       /* Ancho mínimo de ~300px, se adaptan en pantallas pequeñas */
+  }
+
+  .sketch-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+/* ******************************************** */
+.contenedor-componentes {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.componentes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; /* 🔑 Esto hace que todos los .componente tengan la misma altura */
+}
+
+.componente {
+  width: 23%;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column; /* 🔑 Permite distribuir imagen y texto verticalmente */
+}
+
+.componente:hover {
+  transform: translateY(-10px);
+}
+
+.componente-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.componente-texto {
+  flex-grow: 1; 
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.componente-texto h3 {
+  margin: 0 0 10px 0;
+  color: #444;
+}
+
+.componente-texto p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+
+
+body, html {
+  width: 100%;
+  overflow-x: hidden; /* Previene scroll horizontal */
+}
+
+/*enlace color*/
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(0, 0, 255);  /* azul puro al pasar el ratón */
+}
+
+/* contenedor 4*/
+.contenedor4 {
+  background-color: #1E201E;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.textoN4 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.textoN4 p {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contenedorN4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedorN4 img{
+  width: 150px;
+  height: auto;
+}
+
+
+.contenedorN4 .video {
+
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.contenedorN4 img:hover,
+.contenedorN4 .video:hover {
+  transform: scale(1.03); /* Efecto sutil al pasar el mouse */
+}
+
+/**********************************************************************************/
+/* ===============================
+   MEDIA QUERIES PARA TABLET Y MÓVIL
+   =============================== */
+   @media (max-width: 768px) {
+    /* Header */
+    header .t1 {
+      font-size: 16px;
+      letter-spacing: 5px;
+    }
+  
+    /* Contenedor 1 */
+    .contenedor1 {
+      padding: 40px 15px;
+    }
+  
+    .contenedor1 h2 {
+      font-size: 28px;
+      letter-spacing: 5px;
+    }
+  
+    .contenedor1 p {
+      font-size: 13px;
+    }
+  
+    /* Contenedor 2 */
+    .contenedor2 h3 {
+      font-size: 20px;
+    }
+  
+    .contenedor2 p {
+      font-size: 12px;
+    }
+  
+    /* Contenedor 3 y 4 */
+    .contenedor3 h1,
+    .textoN4 h1 {
+      font-size: 22px;
+      letter-spacing: 4px;
+    }
+  
+    .textoN4 p {
+      font-size: 13px;
+    }
+  
+    /* Imagen y video en columna */
+    .contenedorN4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .contenedorN4 img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: contain;
+    }
+  
+    .contenedorN4 .video {
+      width: 100%;
+      max-width: 560px;
+      aspect-ratio: 16 / 9;
+      position: relative;
+    }
+  
+    .contenedorN4 .video iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  
+    /* Componentes: 2 por fila */
+    .componente {
+      width: 48%;
+    }
+  
+    .componente-texto {
+      padding: 10px;
+    }
+  
+    .componente-texto p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Header más compacto */
+    header .t1 {
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+  
+    /* Contenedor 1 */
+    .contenedor1 h2 {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+  
+    .contenedor1 p {
+      font-size: 12px;
+    }
+  
+    /* Imágenes */
+    .imagenes-esp img {
+      padding: 15px 0;
+    }
+  
+    /* Componentes: 1 por fila */
+    .componente {
+      width: 100%;
+    }
+  
+    /* Imagen y video responsivos */
+    .contenedorN4 img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  
+    .contenedorN4 .video {
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+  
+    .contenedorN4 .video iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  
+    .textoN4 p {
+      font-size: 12px;
+    }
+  }
+  

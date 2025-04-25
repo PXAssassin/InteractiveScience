@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maquetación Espectrofotómetro</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1 class="t1">INTERACTIVE SCIENCE</h1>
+    <div class="icon"><img src="img/ai.png" alt=""></div>
+  </header>
+
+  <!-- CONTENEDOR 1 (Fondo oscuro) -->
+  <section class="contenedor1">
+    <h2>ESPECTROFOTOMETRO</h2>
+    <p>
+      Los espectrofotómetros son instrumentos de medición óptica que se utilizan 
+      para analizar y cuantificar las propiedades de la luz en función de su longitud de onda.
+      Su función se basa en la espectroscopía, que estudia la interacción de la luz con la materia, 
+      existen diferentes tipos de espectrofotometros, cada uno con un proposito diferente.
+    </p>
+  </section>
+
+  <!-- CONTENEDOR 2 (Fondo gris) -->
+  <section class="contenedor2">
+    <h3>UV VISIBLE</h3>
+    <p>
+      Utilizado en laboratorios para medir la cantidad de luz absorbida o transmitida 
+      por una muestra en función de su longitud de onda. Esto permite analizar la concentración 
+      y características de sustancias en diversas áreas como química, biología y física.
+    </p>
+
+    <!-- Dos imágenes separadas debajo -->
+    <div class="imagenes-esp">
+      <img class="i1"src="/img/R1.png" alt="Detalle 1" />
+      <img class="i1" src="img/R2.png" alt="Detalle 2" />
+    </div>
+  </section>
+
+    <!-- CONTENEDOR PARA EL OBJETO 3D CON p5.js -->
+    <section id="sketch-container" class="sketch-container">
+        <!-- El canvas de p5.js se insertará aquí -->
+    </section>
+    
+      <!-- Incluye p5.js desde CDN -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>
+      <!-- Incluye tu script de p5.js -->
+      <script src="sketch.js"></script>
+
+    <section class="contenedor3">
+      <h1>COMPONENTES</h1>
+        <div class="contenedor-componentes">
+          
+          <div class="componentes">
+              <!-- Componente 1 -->
+              <div class="componente">
+                  <img src="img/luz.png" alt="Imagen 1" class="componente-img">
+                  <div class="componente-texto">
+                      <h3>FUENTE DE LUZ</h3>
+                      <p>Emite radiacion en el rango ultravioleta</p>
+                  </div>
+              </div>
+              
+              <!-- Componente 2 -->
+              <div class="componente">
+                  <img src="img/monocromador.png" alt="Imagen 2" class="componente-img">
+                  <div class="componente-texto">
+                      <h3>MONOCROMADOR 2</h3>
+                      <p>Selecciona una longitud de onda especifica de la luz emitida.</p>
+                  </div>
+              </div>
+              
+              <!-- Componente 3 -->
+              <div class="componente">
+                  <img src="img/detector (2).png" alt="Imagen 3" class="componente-img">
+                  <div class="componente-texto">
+                      <h3>DETECTOR</h3>
+                      <p> Mide la intensidad de la luz que ha pasado a través de la muestra y la convierte en una señal eléctrica proporcional</p>
+                  </div>
+              </div>
+              
+              <!-- Componente 4 -->
+              <div class="componente">
+                  <img src="img/digital-signal.png" alt="Imagen 4" class="componente-img">
+                  <div class="componente-texto">
+                      <h3>CONVERSION DE SEÑAL</h3>
+                      <p>La señal eléctrica se amplifica y se convierte en digital mediante un convertidor analógico-digital (ADC).​</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="contenedor4">
+      <div class="textoN4">
+        <h1>DISPOSITIVO EN REALIDAD AUMENTADA</h1>
+        <p>
+          Puedes ingresar al siguiente link para ver el EspectroFotómetro en Realidad Aumentada: 
+        </p>
+        <p>
+          <a href="https://player.onirix.com/exp/39GgNp" target="_blank">https://player.onirix.com/exp/39GgNp</a>
+        </p>
+      </div>
+    
+      <div class="contenedorN4">
+        <iframe class=" video" width="560" height="315" src="https://www.youtube.com/embed/V2sFdOixel4?si=zFhaWn4aUbTpNpyo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="img/scan1.png" alt="Imagen de escaneo">
+      </div>
+    </section>
+
+</body>
+</html>
